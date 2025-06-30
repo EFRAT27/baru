@@ -77,9 +77,7 @@
 				popup._contentNode.classList.remove('media');
 			}
 		}
-        var zoomControl = L.control.zoom({
-            position: 'topleft'
-        }).addTo(map);
+var zoom_bar = new L.Control.ZoomBar({position: 'topleft'}).addTo(map);
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
